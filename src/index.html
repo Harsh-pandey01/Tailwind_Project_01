@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <nav
+      class="px-4 py-2 fixed w-screen z-1000 top-0 left-0 flex items-center justify-between bg-white shadow-sm"
+    >
+      <div>
+        <a href="#" class="flex items-center gap-2" id="brand">
+          <img src="/assets/asset 0.png" alt="logo" />
+          <span class="font-heading font-medium text-xl text-secondry"
+            >ToDesktop</span
+          >
+        </a>
+      </div>
+
+      <div
+        id="nav-links"
+        class="hidden md:flex items-center justify-between gap-10 [&>*]:font-medium [&>*]:text-[14px] [&>*]:text-black-para"
+      >
+        <a href="#" class="hover:text-primary font-para transition duration-200"
+          >Pricing</a
+        >
+        <a href="#" class="hover:text-primary font-para transition duration-200"
+          >Products</a
+        >
+        <a href="#" class="hover:text-primary font-para transition duration-200"
+          >Docs</a
+        >
+        <a href="#" class="hover:text-primary font-para transition duration-200"
+          >Challanges</a
+        >
+        <a href="#" class="hover:text-primary font-para transition duration-200"
+          >Login</a
+        >
+      </div>
+
+      <div
+        class="p-[1px] rounded-sm bg-gradient-to-r to-primary to-10% via-blue-500 from-transparent"
+      >
+        <button
+          class="hidden md:flex items-center justify-between gap-2 border bg-white border-black/30 cursor-pointer rounded-sm px-7 font-medium font-para py-2"
+        >
+          <img src="/assets/asset 1.svg" alt="" />
+          Electron Developers
+          <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+
+      <button class="md:hidden">
+        <i
+          class="ri-menu-line cursor-pointer text-xl font-medium text-black"
+        ></i>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <main
+      class="px-4 min-h-fit bg-gradient-to-b from-purple-50 via-orange-50 to-white"
+    >
+      <div
+        class="w-full flex flex-col gap-6 md:gap-9 items-start md:items-center"
+      >
+        <div
+          class="flex group transform hover:-translate-y-1 duration-200 gap-1 mt-24 border border-orange-400 rounded-lg items-center justify-center px-3 py-1 bg-orange-100"
+        >
+          <div
+            class="h-2 w-2 border border-orange-400 rounded-full bg-orange-200"
+          ></div>
+          <p class="font-medium text-[14px] text-amber-600">
+            <span class="text-amber-800">v0.21.1:</span> Find-in-page bug fixes
+            <span
+              class="font-bold text-amber-800 ml-1 group-hover:translate-x-1 transform inline-block"
+            >
+              <i class="ri-arrow-right-line"></i>
+            </span>
+          </p>
+        </div>
+
+        <div
+          class="flex items-center justify-start w-full [&>*]:text-black/50 [&>*]:mr-4 flex-wrap md:text-center md:max-w-fit"
+        >
+          <p>
+            <span class="mr-1"><i class="ri-code-line"></i></span>Code optional
+          </p>
+          <p>
+            <span class="mr-1"><i class="ri-hand"></i></span>Drag and Drop
+            builder
+          </p>
+          <p>
+            <span class="mr-1"><i class="ri-macbook-line"></i></span>Window ,
+            Mac , Linux and PC
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center md:gap-6">
+          <h1
+            class="font-headings text-black font-bold text-3xl max-w-180 md:text-center md:text-6xl"
+          >
+            Web app to desktop app in minutes
+          </h1>
+          <p
+            class="text-black/70 font-para leading-6 font-normal max-w-150 md:text-center md:text-xl"
+          >
+            Take your web app codebase and transform it into a cross platform
+            desktop app with native functionality.
+          </p>
+          <button
+            class="bg-primary text-white font-para font-medium cursor-pointer transition duration-200 hover:shadow-xl border-none md:w-100 outline-none py-2 px-5 w-full rounded-full"
+          >
+            Download Now
+          </button>
+          <button
+            class="text-black font-para font-medium cursor-pointer px-5 transition duration-200 hover:shadow-sm border-1 border-black/30 md:w-100 hover:border-black py-2 w-full rounded-full -mt-2"
+          >
+            Read Docs
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="text-center text-black/70 text-xl font-medium mt-10 font-para flex gap-3 items-center justify-center"
+      >
+        <img
+          src="/assets/asset 2.svg"
+          class="[transform:translateY(10px)]"
+          alt=""
+        />
+        <p>APPS POWERED BY TO DESKTOP</p>
+        <img
+          src="/assets/asset 2.svg"
+          class="[transform:rotateY(180deg)_translateY(10px)]"
+          alt=""
+        />
+      </div>
+    </main>
+
+    <div class="flex mt-6 flex-col gap-5 overflow-hidden">
+      <div id="companies-container" class="w-full flex">
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+      </div>
+      <div id="companies-container2" class="w-full flex -translate-x-[100px]">
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+        <div
+          class="flex items-center p-4 border-1 mx-2 border-black/50 rounded-md w-fit h-fit"
+        >
+          <img src="/assets/asset 0.png" class="min-h-15 min-w-15" alt="" />
+        </div>
+      </div>
+
+      <div class="h-screen"></div>
+    </div>
+  </body>
+</html>
