@@ -13,7 +13,14 @@
     
 }
 
-
+@layer components {
+    .gradient-hover-inner{
+        @apply bg-gradient-to-br from-orange-50 via-purple-50 to-yellow-50
+    }
+    .gradient-hover-outer{
+        @apply bg-gradient-to-br from-orange-100 via-purple-100 to-yellow-100
+    }
+}
 
 .wrapper{
     padding: 0 1rem;
