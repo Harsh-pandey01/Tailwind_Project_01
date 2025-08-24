@@ -17,8 +17,11 @@
     .gradient-hover-inner{
         @apply bg-gradient-to-br from-orange-50 via-purple-50 to-yellow-50
     }
+    .gradient-hover-inner-hover {
+    @apply hover:bg-gradient-to-br hover:from-orange-50 hover:via-purple-50 hover:to-yellow-50;
+  }
     .gradient-hover-outer{
-        @apply bg-gradient-to-br from-orange-100 via-purple-100 to-yellow-100
+        @apply bg-gradient-to-br from-orange-200 via-purple-200 to-yellow-200
     }
 }
 
